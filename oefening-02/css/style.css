@@ -1,0 +1,40 @@
+body {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: auto 20%;
+
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: #91c8ff;
+
+    display: grid;
+    grid-template-columns: auto 250px;
+    
+}
+
+nav {
+    background-color: #b3d8fd;
+    align-self: center;
+}
+
+main {
+    grid-area: main;
+    background-color: #7da9d5;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #007fff;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #588ec3;
+}
